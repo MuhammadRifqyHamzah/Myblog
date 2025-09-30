@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Postingan Pertama - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">My Blog</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Apa itu Conseptual DB</h1>
+        <p class="post-meta">📅 25 September 2025 | ✍️ Muhammad Rifqy Hamzah</p>
+
+        <h3>1. Pengertian</h3>
+        <p>
+            Conseptual DB (Database) adalah tahap awal dalam proses desain database yang fokus padareperentasi tingkat tinggi
+            dari data dan hubungannya, tanpa mempertimbangkan detail teknis seperti perangkat keras, software, atau sistem database spe
+            sifik (misalnya MySQL atau Oracle). Ini seperti "blueprint" atau sketsa konseptual yang menggambarkan apa data yang dibutuhkan
+            oleh sistem, bukan bagaimana menyimpannya. Tujuannya sendiri untuk membantu analis atau desainer memahami kebutuhan bisnis atau 
+            aplikasi, sehingga database yang dibuat nantinya efisien dan sesuai dengan tujuan.
+        </p>
+        <p>
+           Dalam metodologi desain database (seperti yang diajarkan dalam ilmu komputer atau rekayasa perangkat lunak), desain database dibagi 
+           menjadi tiga level:
+           <ul>
+            <li>Conceptual (konseptual): Abstrak dan independen.</li>
+            <li>Logical (logis): Menambahkan detail seperti tipe data, tapi masih independen dari DBMS.</li>
+            <li>Physical (fisik): Implementasi nyata di database spesifik.</li>
+           </ul>
+        </p>
+        <h3>2. Komponen Utama Model Data Konseptual</h3>
+        <p>
+            Model ini biasanya dibuat menggunakan Entity-Relationship (ER) Model, yang terdiri dari:
+            <ul>
+                <li>Entity (Entitas): Objek utama yang disimpan, seperti "Mahasiswa", "Buku", atau "Mobil". 
+                    Setiap entitas punya identitas unik (primary key).</li>
+                <li>Attribute (Atribut): Properti dari entitas, misalnya untuk entitas "Mahasiswa": nama, umur, NIM.</li>
+                <li>Relationship (Hubungan): Bagaimana entitas saling terkait, seperti "Mahasiswa meminjam Buku" 
+                    (bisa one-to-many, many-to-one, dll.).</li>
+                <li>Cardinality: Menentukan jumlah hubungan, misalnya satu mahasiswa bisa pinjam banyak buku (1:N).</li>
+            </ul>
+        </p>
+        <h3>3. Contoh Sederhana</h3>
+        <p>
+            Bayangkan Anda membuat database untuk perpustakaan:
+            <ul>
+                <li>Entitas :
+                    <ul>
+                        <li>Mahasiswa (atribut: NIM, Nama, Alamat).</li>
+                        <li>Buku (atribut: ISBN, Judul, Penulis)</li>
+                    </ul>
+                </li>
+                <li>Hubungan: "Mahasiswa meminjam Buku" (satu mahasiswa bisa pinjam banyak buku, 
+                    tapi satu buku hanya dipinjam satu mahasiswa pada satu waktu → relasi 1:N).</li>
+            </ul>
+        </p>
+        <a href="index.html" class="btn">⬅ Kembali ke Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
