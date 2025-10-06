@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Postingan Pertama - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">My Blog</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Apa Itu Atribut Entitas dan Relasi dalam ERD</h1>
+        <p class="post-meta">📅 25 September 2025 | ✍️ Admin</p>
+        <h3>1. Entitas (Entry)</h3>
+        <p>
+            Entitas adalah objek atau konsep nyata maupun abstrak yang penting untuk disimpan datanya. 
+            Entitas biasanya direpresentasikan sebagai kata benda tunggal.
+            <ul>
+                <li>Dalam ERD: Entitas biasanya digambarkan sebagai persegi panjang.</li>
+                <li>Contoh :</li>
+                <ul>
+                    <li>Orang: Karyawan, Pelanggan</li>
+                    <li>Tempat: Gudang, Cabang</li>
+                    <li>Konsep: Pesanan, Faktur, Mata Kuliah</li>
+                </ul>
+            </ul>
+        </p>
+        <h3>2. Atribut (Attribute) </h3>
+        <p>
+            Atribut adalah karakteristik atau properti yang menjelaskan atau memberikan deskripsi lebih detail 
+            tentang suatu entitas atau relasi. Atribut adalah data aktual yang akan disimpan.
+            <ul>
+                <li>Dalam ERD: Atribut biasanya digambarkan sebagai elips yang terhubung ke entitas.</li>
+                <li>Contoh : </li>
+                <ul>
+                    <li>ID Karyawan</li>
+                    <li>Nama Depan</li>
+                    <li>Tanggal Lahir</li>
+                    <li>Alamat</li>
+                </ul>
+            </ul>
+        </p>
+        <h4>Jenis - Jenis Atribut Penting</h4>
+        <p>
+            <ol>
+                <li>Atribut Kunci (Key Attribute): Atribut yang nilainya unik dan dapat digunakan
+                     untuk mengidentifikasi satu entitas secara spesifik (misalnya, ID Karyawan, Nomor Pokok Mahasiswa).</li>
+                <li>Atribut Komposit (Composite Attribute): Atribut yang dapat dipecah lagi menjadi atribut yang lebih kecil 
+                    dan berarti (misalnya, Alamat dapat dipecah menjadi Jalan, Kota, Kode Pos).</li>
+                <li>Atribut Multivalue (Multivalued Attribute): Atribut yang dapat memiliki lebih dari 
+                    satu nilai untuk satu entitas (misalnya, Nomor Telepon untuk satu Karyawan).</li>
+            </ol>
+        </p>
+        <h3>Relasi (Relationship)</h3>
+        <p>
+            Relasi adalah hubungan atau asosiasi antara dua entitas atau lebih. 
+            Relasi ini menunjukkan bagaimana entitas-entitas tersebut saling berinteraksi.
+            <ul>
+                <li>Dalam ERD: Relasi biasanya digambarkan sebagai belah ketupat yang menghubungkan entitas-entitas.</li>
+                <li>Contoh : </li>
+                <ul>
+                    <li>Karyawan ↔ Bekerja di ↔ Departemen</li>
+                    <li>Mahasiswa ↔ Mengambil ↔ Mata Kuliah</li>
+                </ul>
+                
+            </ul>
+        </p>
+        <a href="index.html" class="btn">⬅ Kembali ke Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
