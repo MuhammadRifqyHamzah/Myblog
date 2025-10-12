@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 7 - Primary Key, Foreign Key, dan Candidate Key</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">My Blog</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Post 7: Apa itu Primary Key, Foreign Key, dan Candidate Key?</h1>
+        <p>Dalam perancangan basis data, <b>key</b> atau kunci memiliki peran penting untuk mengidentifikasi data secara unik dan menjaga hubungan antar tabel di dalam <i>Entity Relationship Diagram (ERD)</i>.</p>
+
+        <h2>1. Primary Key</h2>
+        <p>Primary Key adalah atribut unik yang digunakan untuk mengidentifikasi setiap record (baris) dalam tabel. Nilainya tidak boleh kosong (NULL) dan tidak boleh sama.</p>
+        <h3>Contoh penerapan Primary Key:</h3>
+        <ul>
+            <li>Tabel Mahasiswa → <b>NIM</b></li>
+            <li>Tabel Pegawai → <b>ID_Pegawai</b></li>
+            <li>Tabel Produk → <b>Kode_Produk</b></li>
+            <li>Tabel Buku → <b>ISBN</b></li>
+            <li>Tabel Pelanggan → <b>ID_Pelanggan</b></li>
+        </ul>
+
+        <h2>2. Foreign Key</h2>
+        <p>Foreign Key adalah atribut yang menjadi penghubung antara dua tabel. Atribut ini merujuk pada Primary Key dari tabel lain.</p>
+        <h3>Contoh penerapan Foreign Key:</h3>
+        <ul>
+            <li>Tabel Transaksi → <b>ID_Pelanggan</b> (mengacu ke tabel Pelanggan)</li>
+            <li>Tabel Nilai → <b>NIM</b> (mengacu ke tabel Mahasiswa)</li>
+            <li>Tabel Penjualan → <b>Kode_Produk</b> (mengacu ke tabel Produk)</li>
+            <li>Tabel Absensi → <b>ID_Pegawai</b> (mengacu ke tabel Pegawai)</li>
+            <li>Tabel Peminjaman → <b>ID_Buku</b> (mengacu ke tabel Buku)</li>
+        </ul>
+
+        <h2>3. Candidate Key</h2>
+        <p>Candidate Key adalah atribut yang berpotensi menjadi Primary Key karena memiliki nilai unik dan tidak boleh NULL. Namun, hanya satu yang akan dipilih sebagai Primary Key.</p>
+        <h3>Contoh penerapan Candidate Key:</h3>
+        <ul>
+            <li>Tabel Mahasiswa → <b>NIM</b> dan <b>Email</b></li>
+            <li>Tabel Pegawai → <b>ID_Pegawai</b> dan <b>NIK</b></li>
+            <li>Tabel Buku → <b>ISBN</b> dan <b>Judul_Buku</b></li>
+            <li>Tabel Produk → <b>Kode_Produk</b> dan <b>Barcode</b></li>
+            <li>Tabel Pelanggan → <b>ID_Pelanggan</b> dan <b>No_Telepon</b></li>
+        </ul>
+
+        <a href="index.html" class="btn">← Kembali ke Beranda</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
