@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 8 - Relation pada ERD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">My Blog</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Post 8: Apa itu Relation pada ERD dan Mengapa Many-to-Many Tidak Baik Digunakan?</h1>
+
+        <p>Dalam <b>Entity Relationship Diagram (ERD)</b>, <b>relation</b> atau hubungan menunjukkan bagaimana entitas saling berhubungan. Setiap hubungan menggambarkan interaksi antar entitas dalam sistem basis data.</p>
+
+        <h2>Jenis-jenis Relationship dalam ERD:</h2>
+        <ul>
+            <li><b>One-to-One (1:1)</b> → Satu entitas hanya berhubungan dengan satu entitas lain.<br>Contoh: Setiap pegawai memiliki satu ID KTP unik.</li>
+            <li><b>One-to-Many (1:N)</b> → Satu entitas bisa berhubungan dengan banyak entitas lain.<br>Contoh: Satu dosen mengajar banyak mahasiswa.</li>
+            <li><b>Many-to-Many (M:N)</b> → Banyak entitas dapat berhubungan dengan banyak entitas lainnya.<br>Contoh: Mahasiswa dapat mengambil banyak mata kuliah, dan setiap mata kuliah diambil oleh banyak mahasiswa.</li>
+        </ul>
+
+        <h2>Mengapa Many-to-Many Tidak Baik Digunakan?</h2>
+        <p>Hubungan <b>many-to-many</b> sering kali menyebabkan kesulitan dalam implementasi karena dapat menimbulkan data yang tidak terstruktur dengan baik atau redundan. Dalam database relasional, hubungan M:N tidak bisa diimplementasikan secara langsung.</p>
+
+        <p>Oleh karena itu, hubungan M:N biasanya harus diubah menjadi dua relasi <b>one-to-many</b> dengan menambahkan tabel baru yang disebut <b>tabel penghubung (junction table)</b>.</p>
+
+        <h3>Contoh Konversi Many-to-Many:</h3>
+        <ul>
+            <li>Hubungan awal: <b>Mahasiswa</b> ↔ <b>Mata Kuliah</b></li>
+            <li>Tabel penghubung: <b>KRS</b> (berisi NIM dan Kode_MK)</li>
+        </ul>
+
+        <p>Dengan cara ini, struktur data menjadi lebih efisien dan mudah diolah tanpa terjadi duplikasi data.</p>
+
+        <a href="index.html" class="btn">← Kembali ke Beranda</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
